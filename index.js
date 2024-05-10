@@ -13,43 +13,52 @@ function callback(){
     let weight = 0;
     let EarthWeight = 9.8 * input.value;
     if(st.value == "Earth"){
-    weightvalue.innerHTML = input.value+"kg";
+    weightvalue.innerHTML = input.value+" kg";
     }
     else if(st.value == "Mars"){
     let r = (3.7 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+    let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Jupiter"){
     let r = (24.5 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+    let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Moon"){
    let r = (1.625 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+   let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Mercury"){
     let r = (3.7 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+   let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Venus"){
    let r = (8.87 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+    let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Neptune"){
   let r = (11.15 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+   let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Uranus"){
  let r = (8.69 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+    let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Pluto"){
  let r = (0.62 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+   let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
     else if(st.value == "Saturn"){
     let r = (8.96 * input.value)/EarthWeight;
-    weightvalue.innerHTML = (r*input.value)+"kg";
+    let weight = r*input.value;
+    weightvalue.innerHTML = weight+" kg";
     }
 }
 
