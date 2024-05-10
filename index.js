@@ -4,12 +4,6 @@ let input = document.querySelector(".input");
 let image = document.querySelector(".planet-image");
 let weightvalue = document.querySelector(".weight-value"); 
 
-function acc( M , r){
-const G = 6.67 * Math.pow(10,-11);
-let result = (G*M)/r*r;
-return result;
-}
-
 function callback(){
     // code to get the image of the planet 
     let text = st.value+".png";
