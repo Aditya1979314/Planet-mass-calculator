@@ -11,45 +11,45 @@ function callback(){
     image.src = newsrc;
     // Code to get the value of the weight on a particular planet 
     let weight = 0;
+    let EarthWeight = 9.8 * input.value;
     if(st.value == "Earth"){
-    weight = 9.8 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+    weightvalue.innerHTML = input.value+"kg";
     }
     else if(st.value == "Mars"){
-    weight = 3.7 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+    let r = (3.7 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Jupiter"){
-    weight = 24.58 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+    let r = (24.5 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Moon"){
-    weight = 1.625 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+   let r = (1.625 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Mercury"){
-    weight = 3.7 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+    let r = (3.7 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Venus"){
-    weight = 8.87 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+   let r = (8.87 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Neptune"){
-    weight = 11.15 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+  let r = (11.15 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Uranus"){
-    weight = 8.69 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+ let r = (8.69 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Pluto"){
-    weight = 0.62 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+ let r = (0.62 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
     else if(st.value == "Saturn"){
-    weight = 8.96 * input.value;
-    weightvalue.innerHTML = weight+" Newton";
+    let r = (8.96 * input.value)/EarthWeight;
+    weightvalue.innerHTML = (r*input.value)+"kg";
     }
 }
 
